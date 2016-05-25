@@ -23,6 +23,8 @@ public class BookController {
 
         Book book = new Book("Book title", "ISBN", "Description", new BigDecimal(100));
         bookService.addBook(book);
+        Book book2 = new Book("Book title2", "ISBN2", "Description2", new BigDecimal(200));
+        bookService.addBook(book2);
 
         List<Book> books = bookService.getBooks();
         System.out.println(books.size());

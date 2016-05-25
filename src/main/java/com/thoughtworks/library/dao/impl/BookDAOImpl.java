@@ -15,7 +15,6 @@ public class BookDAOImpl implements BookDAO {
     @Autowired
     private SessionFactory sessionFactory;
 
-
     @Override
     public void addBook(Book book) {
         Session session = sessionFactory.getCurrentSession();
